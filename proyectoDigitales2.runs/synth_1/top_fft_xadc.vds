@@ -1,0 +1,300 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Nov 26 21:33:14 2024
+# Process ID: 22572
+# Current directory: C:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.runs/synth_1
+# Command line: vivado.exe -log top_fft_xadc.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_fft_xadc.tcl
+# Log file: C:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.runs/synth_1/top_fft_xadc.vds
+# Journal file: C:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.runs/synth_1\vivado.jou
+# Running On        :DESKTOP-B69ULGN
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26120
+# Processor Detail  :AMD Ryzen 7 5700U with Radeon Graphics         
+# CPU Frequency     :1797 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :16468 MB
+# Swap memory       :13291 MB
+# Total Virtual     :29760 MB
+# Available Virtual :4070 MB
+#-----------------------------------------------------------
+source top_fft_xadc.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 513.137 ; gain = 200.691
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/WorkBORI/Basys-3/hw/repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.srcs/utils_1/imports/synth_1/XADCdemo.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.srcs/utils_1/imports/synth_1/XADCdemo.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_fft_xadc -part xc7a35tcpg236-1
+Starting synth_design
+INFO: [IP_Flow 19-2162] IP 'xadc_wiz_0' is locked:
+* IP definition 'XADC Wizard (3.3)' for IP 'xadc_wiz_0' (customized with software release 2020.1) has a different revision in the IP Catalog.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Device 21-9227] Part: xc7a35tcpg236-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 2164
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1379.422 ; gain = 449.734
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_fft_xadc' [C:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.srcs/sources_1/new/top.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'XADC_module' [C:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.srcs/sources_1/new/xadc_module.vhd:15]
+INFO: [Synth 8-6157] synthesizing module 'xadc_wiz_0' [C:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.runs/synth_1/.Xil/Vivado-22572-DESKTOP-B69ULGN/realtime/xadc_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'xadc_wiz_0' (0#1) [C:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.runs/synth_1/.Xil/Vivado-22572-DESKTOP-B69ULGN/realtime/xadc_wiz_0_stub.v:5]
+INFO: [Synth 8-226] default block is never used [C:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.srcs/sources_1/new/xadc_module.vhd:64]
+INFO: [Synth 8-256] done synthesizing module 'XADC_module' (0#1) [C:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.srcs/sources_1/new/xadc_module.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'fft_module_8' [C:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.srcs/sources_1/new/FFT_module_8.vhd:26]
+INFO: [Synth 8-6157] synthesizing module 'xfft_1' [C:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.runs/synth_1/.Xil/Vivado-22572-DESKTOP-B69ULGN/realtime/xfft_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'xfft_1' (0#1) [C:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.runs/synth_1/.Xil/Vivado-22572-DESKTOP-B69ULGN/realtime/xfft_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'fft_module_8' (0#1) [C:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.srcs/sources_1/new/FFT_module_8.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'uart_module' [C:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.srcs/sources_1/new/Tx-uart.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'transmitter' [C:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.srcs/sources_1/new/Transmiter.vhd:15]
+INFO: [Synth 8-226] default block is never used [C:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.srcs/sources_1/new/Transmiter.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'transmitter' (0#1) [C:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.srcs/sources_1/new/Transmiter.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'uart_module' (0#1) [C:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.srcs/sources_1/new/Tx-uart.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'top_fft_xadc' (0#1) [C:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.srcs/sources_1/new/top.vhd:16]
+WARNING: [Synth 8-7129] Port btn1 in module top_fft_xadc is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1493.805 ; gain = 564.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1493.805 ; gain = 564.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1493.805 ; gain = 564.117
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1493.805 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.gen/sources_1/ip/xadc_wiz_0/xadc_wiz_0/xadc_wiz_0_in_context.xdc] for cell 'XADC_inst/XLXI_7'
+Finished Parsing XDC File [c:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.gen/sources_1/ip/xadc_wiz_0/xadc_wiz_0/xadc_wiz_0_in_context.xdc] for cell 'XADC_inst/XLXI_7'
+Parsing XDC File [c:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.gen/sources_1/ip/xfft_1/xfft_1/xfft_1_in_context.xdc] for cell 'FFT_inst/FFT_IP'
+Finished Parsing XDC File [c:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.gen/sources_1/ip/xfft_1/xfft_1/xfft_1_in_context.xdc] for cell 'FFT_inst/FFT_IP'
+Parsing XDC File [C:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.srcs/TOP_ADC_FFT/imports/new/top_fft_adc.xdc]
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.srcs/TOP_ADC_FFT/imports/new/top_fft_adc.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.srcs/TOP_ADC_FFT/imports/new/top_fft_adc.xdc:9]
+Finished Parsing XDC File [C:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.srcs/TOP_ADC_FFT/imports/new/top_fft_adc.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.srcs/TOP_ADC_FFT/imports/new/top_fft_adc.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_fft_xadc_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.srcs/TOP_ADC_FFT/imports/new/top_fft_adc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_fft_xadc_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_fft_xadc_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1585.430 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1585.430 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1585.430 ; gain = 655.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1585.430 ; gain = 655.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for XADC_inst/XLXI_7. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for FFT_inst/FFT_IP. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1585.430 ; gain = 655.742
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_fft_xadc'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+          send_magnitude |                              010 |                               01
+              send_phase |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'top_fft_xadc'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1585.430 ; gain = 655.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input    8 Bit       Adders := 1     
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   3 Input    8 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 7     
+	   3 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port btn1 in module top_fft_xadc is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1585.430 ; gain = 655.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1585.430 ; gain = 655.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1585.430 ; gain = 655.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1585.430 ; gain = 655.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1585.430 ; gain = 655.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1585.430 ; gain = 655.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1585.430 ; gain = 655.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1585.430 ; gain = 655.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1585.430 ; gain = 655.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1585.430 ; gain = 655.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |xfft_1        |         1|
+|2     |xadc_wiz_0    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |xadc_wiz |     1|
+|2     |xfft     |     1|
+|3     |BUFG     |     1|
+|4     |CARRY4   |     8|
+|5     |LUT1     |     3|
+|6     |LUT2     |    12|
+|7     |LUT3     |    12|
+|8     |LUT4     |    21|
+|9     |LUT5     |     9|
+|10    |LUT6     |     5|
+|11    |FDRE     |    47|
+|12    |FDSE     |     1|
+|13    |IBUF     |    13|
+|14    |OBUF     |     1|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1585.430 ; gain = 655.742
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:36 . Memory (MB): peak = 1585.430 ; gain = 564.117
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1585.430 ; gain = 655.742
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1585.430 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1585.430 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 9dca7f2d
+INFO: [Common 17-83] Releasing license: Synthesis
+43 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1585.430 ; gain = 1059.070
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1585.430 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/adria/vivadoAndrea/proyectoDigitales2/proyectoDigitales2.runs/synth_1/top_fft_xadc.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_fft_xadc_utilization_synth.rpt -pb top_fft_xadc_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 26 21:34:14 2024...
